@@ -1,10 +1,19 @@
 import './Sidebar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
 
 export default function Sidebar() {
     return (
         <div className="sidebar">
-            <ul>
-                <li className="sidebar__h1">react-nmi-collectjs</li>
+            <ul className="sidebar__topLevel">
+                <li className="sidebar__h1">
+                    <div>
+                        <FontAwesomeIcon icon={faReact} size="lg"/>
+                    </div>
+                    <div className="sidebar__h1-content">
+                        react-nmi-collectjs
+                    </div>
+                </li>
                 <ul>
                     <li>Examples</li>
                     <li>Components</li>

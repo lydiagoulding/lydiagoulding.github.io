@@ -8,6 +8,16 @@
     list-style: none;
 }
 
+.sidebar__topLevel {
+    padding:0;
+}
+
 .sidebar__h1 {
+    display:flex;
     font-size: 22px;
+    align-items:center;
+}
+
+.sidebar__h1-content {
+    margin-left: 5px;
 }
