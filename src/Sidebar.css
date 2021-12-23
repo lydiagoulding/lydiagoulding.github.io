@@ -1,0 +1,13 @@
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: navy;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar__h1 {
+    font-size: 22px;
+}
