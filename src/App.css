@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local('Open Sans'), url(./fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
 body {
   background-color: rgb(251, 251, 251);
+  font-family: "Open Sans", sans-serif;
 }
+
 
 .App {
   display: grid;
-  grid-template-columns:  [first] 250px [sidebar] auto;
-
+  grid-template-columns: 25px 250px auto;
 }

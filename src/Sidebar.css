@@ -1,6 +1,6 @@
 .sidebar {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     color: navy;
 }
 
@@ -8,16 +8,25 @@
     list-style: none;
 }
 
-.sidebar__topLevel {
+.sidebar ul li {
+    margin: 5px;
+}
+
+.sidebar__level1 {
     padding:0;
 }
 
 .sidebar__h1 {
     display:flex;
-    font-size: 22px;
+    font-size: 20px;
     align-items:center;
+    font-weight: bold;
 }
 
 .sidebar__h1-content {
     margin-left: 5px;
+}
+
+.sidebar__level2 {
+    font-size: 16px;
 }

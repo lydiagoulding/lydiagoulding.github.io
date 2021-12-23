@@ -5,7 +5,7 @@ import { faReact } from '@fortawesome/free-brands-svg-icons'
 export default function Sidebar() {
     return (
         <div className="sidebar">
-            <ul className="sidebar__topLevel">
+            <ul className="sidebar__level1">
                 <li className="sidebar__h1">
                     <div>
                         <FontAwesomeIcon icon={faReact} size="lg"/>
@@ -14,9 +14,12 @@ export default function Sidebar() {
                         react-nmi-collectjs
                     </div>
                 </li>
-                <ul>
-                    <li>Examples</li>
+                <ul className="sidebar__level2">
+                    <li>Example</li>
                     <li>Components</li>
+                    <ul className="sidebar__level3">
+
+                    </ul>
                     <li>Hooks</li>
                     <li>Context</li>
                     <li>Utilities</li>
