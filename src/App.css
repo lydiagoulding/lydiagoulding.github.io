@@ -11,6 +11,13 @@ body {
 .App {
   max-width: 1250px;
   margin: 0 auto;
+}
+
+.AppGrid {
   display: grid;
-  grid-template-columns: 5px 250px auto;
+  grid-template-columns: 5px 250px 995px;
+}
+
+.content {
+  grid-column-start: 3;
 }
