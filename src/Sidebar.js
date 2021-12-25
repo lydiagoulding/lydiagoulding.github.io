@@ -1,12 +1,15 @@
 import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact } from '@fortawesome/free-brands-svg-icons'
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
 
 export default function Sidebar() {
+    const [reactNmiCollectJSCollapsed, setReactNmiCollectJSCollapsed] = useState(false);
+
     return (
         <div className="sidebar">
-            <ul className="sidebar__level1">
-                <li className="sidebar__h1">
+            <ul className={`sidebar__level1  collapsable ${!reactNmiCollectJSCollapsed && 'collapsable--open'}`}>
+                <li className="sidebar__h1" onClick={() => setReactNmiCollectJSCollapsed(!reactNmiCollectJSCollapsed)}>
                     <div>
                         <FontAwesomeIcon icon={faReact} size="lg"/>
                     </div>
@@ -14,7 +17,7 @@ export default function Sidebar() {
                         react-nmi-collectjs
                     </div>
                 </li>
-                <ul className="sidebar__level2">
+                <ul className="collapsable__content sidebar__level2">
                     <li>Example</li>
                     <li>Components</li>
                     <ul className="sidebar__level3">

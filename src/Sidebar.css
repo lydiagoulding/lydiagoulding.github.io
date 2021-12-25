@@ -34,3 +34,24 @@
 .sidebar__level2 {
     font-size: 14px;
 }
+
+
+/* TODO: refactor out collapsable somehow? */
+
+.collapsable {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: navy;
+}
+
+.collapsable__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out, margin 0.25s;
+}
+
+.collapsable--open > .collapsable__content{
+    max-height: 1000px;
+    margin: 16px 0;
+    transition: max-height 0.30s ease-in, margin 0.25s;
+}

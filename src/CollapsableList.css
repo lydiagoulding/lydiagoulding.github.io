@@ -10,7 +10,7 @@
     transition: max-height 0.15s ease-out, margin 0.25s;
 }
 
-.collapsable--open .collapsable__content{
+.collapsable--open > .collapsable__content{
     max-height: 1000px;
     margin: 16px 0;
     transition: max-height 0.30s ease-in, margin 0.25s;

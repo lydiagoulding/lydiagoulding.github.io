@@ -6,7 +6,23 @@ function App() {
   return (
     <div className="App">
       <Sidebar></Sidebar>
-      <CollapsableList/>
+      <CollapsableList header="CollapsableList">
+          <ul>
+              <li>Foobar</li>
+              <li>Foobar</li>
+              <li>Foobar</li>
+          </ul>
+          <CollapsableList
+              header="InnerCollapsable"
+              headerClasses="embiggen"
+          >
+              <ul>
+                  <li>Foobar</li>
+                  <li>Foobar</li>
+                  <li>Foobar</li>
+              </ul>
+          </CollapsableList>
+      </CollapsableList>
     </div>
   );
 }
