@@ -10,6 +10,11 @@
 
 .sidebar ul li {
     margin: 5px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    font-weight: bold;
 }
 
 .sidebar__level1 {
@@ -31,8 +36,9 @@
     font-size: 16px;
 }
 
-.sidebar__level2 {
+.sidebar__level3 {
     font-size: 14px;
+    padding-left:15px;
 }
 
 
@@ -45,6 +51,7 @@
 }
 
 .collapsable__content {
+    margin: 0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.15s ease-out, margin 0.25s;
@@ -52,6 +59,5 @@
 
 .collapsable--open > .collapsable__content{
     max-height: 1000px;
-    margin: 16px 0;
     transition: max-height 0.30s ease-in, margin 0.25s;
 }
