@@ -18,11 +18,26 @@ export default function Sidebar() {
                     <li>Example</li>
                     <li>Components</li>
                     <ul className="sidebar__level3">
-
+                        <li>CardCVVInput</li>
+                        <li>CardExpirationInput</li>
+                        <li>CardNumberInput</li>
+                        <li>CheckAccountInput</li>
+                        <li>CheckRoutingNumberInput</li>
+                        <li>CheckNameInput</li>
+                        <li>ValidationContainer</li>
                     </ul>
                     <li>Hooks</li>
+                    <ul className="sidebar__level3">
+                        <li>useCollect</li>
+                    </ul>
                     <li>Context</li>
+                    <ul className="sidebar__level3">
+                        <li>CollectJSProvider</li>
+                    </ul>
                     <li>Utilities</li>
+                    <ul className="sidebar__level3">
+                        <li>injectCollectJS</li>
+                    </ul>
                 </ul>
             </ul>
         </div>
