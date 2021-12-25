@@ -1,6 +1,7 @@
 import Sidebar from './Sidebar';
 import './App.css';
 import ComponentsPage from "./ComponentsPage";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
             <div className="content">
                 <ComponentsPage/>
             </div>
+            <Footer/>
         </div>
     </div>
   );
