@@ -7,6 +7,7 @@ import UtilitiesPage from "./UtiliitesPage";
 import Footer from "./Footer";
 import {Route, BrowserRouter, Routes} from "react-router-dom";
 import ExamplePage from "./ExamplePage";
+import InstallPage from "./InstallPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                   <div className="content">
                     <Routes>
                         <Route path="/react-nmi-collectjs">
+                            <Route path="install" element={<InstallPage/>} />
                             <Route path="examples" element={<ExamplePage/>} />
                             <Route path="components" element={<ComponentsPage/>} />
                             <Route path="hooks" element={<HooksPage/>} />

@@ -23,6 +23,7 @@ export default function Sidebar() {
                     </div>
                 </li>
                 <ul className="collapsable__content sidebar__level2">
+                    <Link to="/react-nmi-collectjs/install"><li>Install</li></Link>
                     <Link to="/react-nmi-collectjs/examples"><li>Example</li></Link>
                     <li onClick={() => setComponentsCollapsed(!componentsCollapsed)}>Components</li>
                     <ul className={`sidebar__level3 collapsable ${!componentsCollapsed && 'collapsable--open'}`}>
