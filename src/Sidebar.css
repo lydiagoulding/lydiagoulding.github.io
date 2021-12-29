@@ -4,6 +4,11 @@
     color: navy;
 }
 
+.sidebar a {
+    color: navy;
+    text-decoration: none;
+}
+
 .sidebar ul {
     list-style: none;
 }
