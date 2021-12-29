@@ -2,4 +2,34 @@
     grid-column-start: 1;
     grid-column-end: 4;
     min-height: 200px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 50px;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 250px 250px;
+}
+
+.footer a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(0, 0, 128, 0.6);
+}
+
+.footer a:hover {
+    font-weight: bold;
+    color: rgb(0, 0, 128);
+}
+
+.footer .footer__columnHeader {
+    margin-bottom: 10px;
+}
+
+.footer .footer__columnItem {
+    margin: 5px 0;
+}
+
+.footer .footer__columnItemText {
+    margin-left: 5px;
 }
