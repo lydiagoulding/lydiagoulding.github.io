@@ -27,13 +27,13 @@ export default function Sidebar() {
                     <li onClick={() => setComponentsCollapsed(!componentsCollapsed)}>Components</li>
                     <ul className={`sidebar__level3 collapsable ${!componentsCollapsed && 'collapsable--open'}`}>
                         <div className="collapsable__content">
-                            <Link to="/react-nmi-collectjs/components"><li>CardCVVInput</li></Link>
-                            <Link to="/react-nmi-collectjs/components"><li>CardExpirationInput</li></Link>
-                            <Link to="/react-nmi-collectjs/components"><li>CardNumberInput</li></Link>
-                            <Link to="/react-nmi-collectjs/components"><li>CheckAccountInput</li></Link>
-                            <Link to="/react-nmi-collectjs/components"><li>CheckRoutingNumberInput</li></Link>
-                            <Link to="/react-nmi-collectjs/components"><li>CheckNameInput</li></Link>
-                            <Link to="/react-nmi-collectjs/components"><li>ValidationContainer</li></Link>
+                            <Link to="/react-nmi-collectjs/components#cardCvvInput"><li>CardCVVInput</li></Link>
+                            <Link to="/react-nmi-collectjs/components#cardExpirationInput"><li>CardExpirationInput</li></Link>
+                            <Link to="/react-nmi-collectjs/components#cardNumberInput"><li>CardNumberInput</li></Link>
+                            <Link to="/react-nmi-collectjs/components#checkAccountInput"><li>CheckAccountInput</li></Link>
+                            <Link to="/react-nmi-collectjs/components#checkRoutingNumberInput"><li>CheckRoutingNumberInput</li></Link>
+                            <Link to="/react-nmi-collectjs/components#checkNameInput"><li>CheckNameInput</li></Link>
+                            <Link to="/react-nmi-collectjs/components#validationContainer"><li>ValidationContainer</li></Link>
                         </div>
 
                     </ul>

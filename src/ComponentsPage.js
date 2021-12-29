@@ -1,4 +1,17 @@
+import {useEffect} from "react";
+import {useLocation} from "react-router-dom";
+
 export default function ComponentsPage() {
+    const location = useLocation();
+
+    useEffect(() => {
+        setTimeout(() => {
+            if (location?.hash.length > 0 && document.querySelector(location?.hash) instanceof Node) {
+                document.querySelector(location?.hash).scrollIntoView();
+            }
+        }, 0)
+    }, [location])
+
     return (
         <>
             <h1>Inputs</h1>
@@ -6,7 +19,7 @@ export default function ComponentsPage() {
                 Inputs are Collect.js fields that capture specific pieces of payment data. After a field is rendered to the DOM, you must run CollectJS.configure() to allow Collect.js to mount the field. The data a user puts in the fields are controlled internally by Collect.js and are not accessible by react-nmi-collectjs.
             </p>
 
-            <h2>CardCVVInput</h2>
+            <h2 id="cardCvvInput">CardCVVInput</h2>
             <p>
                 CVVs are sometimes optional for credit card data. If used, you must also use CardNumberInput and CardExpirationInput to create a complete payment token.
             </p>
@@ -17,7 +30,7 @@ export default function ComponentsPage() {
             </div>
 
 
-            <h2>CardExpirationInput</h2>
+            <h2 id="cardExpirationInput">CardExpirationInput</h2>
             <p>
                 To complete a payment token with card data, you must also use CardNumberInput.
             </p>
@@ -27,7 +40,7 @@ export default function ComponentsPage() {
                 </code>
             </div>
 
-            <h2>CardNumberInput</h2>
+            <h2 id="cardNumberInput">CardNumberInput</h2>
             To complete a payment token with card data, you must also use CardExpirationInput.
 
             <div>
@@ -37,27 +50,27 @@ export default function ComponentsPage() {
             </div>
 
 
-            <h2>CheckAccountInput</h2>
+            <h2 id="checkAccountInput">CheckAccountInput</h2>
             <p>
                 Collects a checking account number. To complete a payment token with check data, you must also use CheckRoutingNumberInput.
             </p>
 
             &lt;CheckAccountInput /&gt;
 
-            <h2>CheckRoutingNumberInput</h2>
+            <h2 id="checkRoutingNumberInput">CheckRoutingNumberInput</h2>
             <p>
                 Collects a bank routing number. To complete a payment token with check data, you must also use CheckAccountInput.
             </p>
 
             &lt;CheckAccountInput /&gt;
-            <h2>CheckNameInput</h2>
+            <h2 id="checkNameInput">CheckNameInput</h2>
             <p>
                 This field is usually optional. Collects a name on a checking account. To complete a payment token with check data, you must also use CheckAccountInput and CheckRoutingNumber.
             </p>
 
             &lt;CheckNameInput /&gt;
 
-            <h2>ValidationContainer</h2>
+            <h2 id="validationContainer">ValidationContainer</h2>
             <p>
                 Provides information about errors in the inputs. If errors are present, you will not be able to produce a payment token.
             </p>
