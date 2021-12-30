@@ -11,10 +11,10 @@ import InstallPage from "./InstallPage";
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/collectjs">
           <div className="App">
               <div className="AppGrid">
-                  <Sidebar></Sidebar>
+                  <Sidebar/>
                   <div className="content">
                     <Routes>
                         <Route path="/react-nmi-collectjs">
