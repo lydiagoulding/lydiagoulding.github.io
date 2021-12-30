@@ -5,13 +5,13 @@ import HooksPage from "./HooksPage";
 import ContextPage from "./ContextPage";
 import UtilitiesPage from "./UtiliitesPage";
 import Footer from "./Footer";
-import {Route, BrowserRouter, Routes} from "react-router-dom";
+import {Route, BrowserRouter, Routes, HashRouter} from "react-router-dom";
 import ExamplePage from "./ExamplePage";
 import InstallPage from "./InstallPage";
 
 function App() {
   return (
-      <BrowserRouter basename="/collectjs">
+      <HashRouter>
           <div className="App">
               <div className="AppGrid">
                   <Sidebar/>
@@ -30,7 +30,7 @@ function App() {
                 <Footer/>
               </div>
           </div>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
