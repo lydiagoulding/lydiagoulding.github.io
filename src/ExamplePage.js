@@ -3,9 +3,13 @@ import './ExamplePage.css'
 export default function ExamplePage() {
     return (<>
 
-        <iframe src={`${process.env.PUBLIC_URL}/examples/react-nmi-collectjs/build/index.html`}/>
-
         <h1>Example</h1>
+
+        <p>
+            See complete code on Github:
+        </p>
+
+        <iframe src={`${process.env.PUBLIC_URL}/examples/react-nmi-collectjs/build/index.html`}/>
 
         <h2>App.js</h2>
         <div>

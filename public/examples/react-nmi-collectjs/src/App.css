@@ -3,6 +3,10 @@
   max-width: 995px;
 }
 
+.App pre {
+  text-align: start;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/collectjs/examples/react-nmi-collectjs/build/static/css/main.135bb1d7.css",
-    "main.js": "/collectjs/examples/react-nmi-collectjs/build/static/js/main.fa958f01.js",
+    "main.css": "/collectjs/examples/react-nmi-collectjs/build/static/css/main.a80d9183.css",
+    "main.js": "/collectjs/examples/react-nmi-collectjs/build/static/js/main.8284bb39.js",
     "static/js/787.6f12e0a0.chunk.js": "/collectjs/examples/react-nmi-collectjs/build/static/js/787.6f12e0a0.chunk.js",
     "index.html": "/collectjs/examples/react-nmi-collectjs/build/index.html",
-    "main.135bb1d7.css.map": "/collectjs/examples/react-nmi-collectjs/build/static/css/main.135bb1d7.css.map",
-    "main.fa958f01.js.map": "/collectjs/examples/react-nmi-collectjs/build/static/js/main.fa958f01.js.map",
+    "main.a80d9183.css.map": "/collectjs/examples/react-nmi-collectjs/build/static/css/main.a80d9183.css.map",
+    "main.8284bb39.js.map": "/collectjs/examples/react-nmi-collectjs/build/static/js/main.8284bb39.js.map",
     "787.6f12e0a0.chunk.js.map": "/collectjs/examples/react-nmi-collectjs/build/static/js/787.6f12e0a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.135bb1d7.css",
-    "static/js/main.fa958f01.js"
+    "static/css/main.a80d9183.css",
+    "static/js/main.8284bb39.js"
   ]
 }

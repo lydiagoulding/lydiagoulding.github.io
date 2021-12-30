@@ -103,7 +103,10 @@ export default function PaymentForm() {
 
         <button onClick={onSubmit}>Submit</button>
         <div>
-            {JSON.stringify(response)}
+            Response:
+            <pre>
+                {JSON.stringify(response, null, 2)}
+            </pre>
         </div>
         <button onClick={onRestart}>Restart</button>
     </form>);
