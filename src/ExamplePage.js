@@ -1,5 +1,10 @@
+import './ExamplePage.css'
+
 export default function ExamplePage() {
     return (<>
+
+        <iframe src={`${process.env.PUBLIC_URL}/examples/react-nmi-collectjs/build/index.html`}/>
+
         <h1>Example</h1>
 
         <h2>App.js</h2>

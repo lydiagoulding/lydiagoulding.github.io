@@ -2,6 +2,7 @@
   "name": "examples",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/collectjs/examples/react-nmi-collectjs/build",
   "dependencies": {
     "@lydiagoulding/react-nmi-collectjs": "^0.1.1",
     "@testing-library/jest-dom": "^5.16.1",
