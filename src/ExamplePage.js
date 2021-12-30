@@ -6,7 +6,7 @@ export default function ExamplePage() {
         <h1>Example</h1>
 
         <p>
-            See complete code on Github:
+            See complete code on <a href="https://github.com/lydiagoulding/lydiagoulding.github.io/tree/master/public/examples/react-nmi-collectjs">Github</a>.
         </p>
 
         <iframe src={`${process.env.PUBLIC_URL}/examples/react-nmi-collectjs/build/index.html`}/>
